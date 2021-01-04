@@ -12,11 +12,11 @@ on:
   workflow_dispatch:
 
 # Environment variables are defined so that they can be used throughout the job definitions.
-env:
+ env:
   imageRepository: 'content-init'
-  resourceGroupName: 'Fabmedical-[SHORT_SUFFIX]'
-  containerRegistryName: 'fabmedical[SHORT_SUFFIX]'
-  containerRegistry: 'fabmedical[SHORT_SUFFIX].azurecr.io'
+  resourceGroupName: 'MCWCloudNative'
+  containerRegistryName: 'fabmedicalEKU'
+  containerRegistry: 'fabmedicaleku.azurecr.io'
   dockerfilePath: './content-init'
   tag: '${{ github.run_id  }}'
 
